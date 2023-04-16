@@ -131,6 +131,7 @@ class RestoItem extends HTMLElement {
 
     data.restaurants.forEach((restaurant) => {
       const listItem = document.createElement("li");
+      listItem.setAttribute("tabIndex", "0");
       listItem.innerHTML = `
       <img src="${restaurant.pictureId}" alt="${restaurant.name}">
       <div class="info">

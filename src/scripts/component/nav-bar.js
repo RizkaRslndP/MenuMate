@@ -185,6 +185,7 @@ class navBar extends HTMLElement {
       <span></span>
       <span></span>
       <span></span>
+    </button>
     </nav>
     `;
     const navbarHamburger = this.shadowDOM.querySelector(".navbar-hamburger");
