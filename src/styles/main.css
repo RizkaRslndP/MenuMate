@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  display: block;
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  background-image: linear-gradient(62deg, #a9650d 0%, #e3b54b 67%);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.banner-container {
+  position: relative;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 650px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/images/heros/hero-image_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1) blur(3px);
+  z-index: -1;
+}
+
+.banner h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 2em;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px;
+  color: #996F27;
+}
+
+h3 {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright a:hover {
+  color: white;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #FCE22A;
+  color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .banner h1 {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .banner {
+    width: 100%;
+    margin: auto;
+  }
+
+  .banner h1 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner {
+    width: 1000px;
+  }
+  .banner h1 {
+    font-size: 3vw;
+  }
+}
