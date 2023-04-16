@@ -45,6 +45,12 @@ class navBar extends HTMLElement {
       gap: 20px;
     }
     
+    .nav-menu ul{
+      list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
     .nav-menu li {
       margin-right: 20px;
       list-style: none;
@@ -59,7 +65,7 @@ class navBar extends HTMLElement {
       color: rgba(0, 0, 0, 0.9);
       font-weight: bold;
       text-decoration: none;
-      padding: 10px;
+      padding: 12px;
       border-radius: 5px;
       transition: all 0.2s ease;
     }
@@ -127,19 +133,15 @@ class navBar extends HTMLElement {
         right: 0;
         width: auto;
         height: auto;
-        padding: 15px;
         background: rgba(200, 158, 60, 0.9);
-        transform: translateY(70%);
+        transform: translateY(65%);
         z-index: 1;
       }
     
       .nav-menu.show ul {
         list-style-type: none;
-        padding: 0 16px;
-      }
-
-      .nav-menu.show li {
-        padding: 5px 0px;
+        padding: 0;
+        margin: 0;
       }
     
       .nav-menu.show li:last-child {
@@ -147,9 +149,12 @@ class navBar extends HTMLElement {
       }
     
       .nav-menu.show a {
+        display: block;
         color: rgba(0, 0, 0, 0.9);
         font-weight: bold;
         transition: all 0.2s ease;
+        padding: 15px;
+        margin: 0;
       }
     
       .nav-menu.show a:hover {

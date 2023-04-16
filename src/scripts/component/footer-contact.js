@@ -49,7 +49,7 @@ class FooterContact extends HTMLElement {
 
       .social-icons a {
         display: inline-block;
-        margin-right: 10px;
+        padding: 10px;
       }
 
       .email-form {
@@ -68,7 +68,7 @@ class FooterContact extends HTMLElement {
 
       .email-form input[type="email"],
       .email-form textarea {
-        padding: 10px;
+        padding: 15px;
         margin-bottom: 10px;
         border-radius: 5px;
         border: none;
