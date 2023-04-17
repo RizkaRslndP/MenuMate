@@ -36,7 +36,8 @@ class navBar extends HTMLElement {
       align-items: center;
       font-size: 30px;
       margin-left: 60px;
-      margin-top: 40px;
+      margin-top: 30px;
+      padding: 10px;
       color: rgba(0, 0, 0, 1);
     }
     
@@ -82,9 +83,7 @@ class navBar extends HTMLElement {
     }
 
     button {
-      max-width: 44px;
-      min-width: 44px;
-      padding: 13px;
+      padding: 15px;
     }
 
     @media only screen and (max-width: 768px) {
@@ -129,10 +128,12 @@ class navBar extends HTMLElement {
       .nav-menu.show {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         position: absolute;  
         right: 0;
         width: auto;
         height: auto;
+        padding: 10px;
         background: rgba(200, 158, 60, 0.9);
         transform: translateY(65%);
         z-index: 1;
@@ -175,17 +176,17 @@ class navBar extends HTMLElement {
       </a>
     </div>
     
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#">Favorite</a></li>
-      <li><a href="#about">About Us</a></li>
-    </ul>
-
     <button class="navbar-hamburger" aria-label="Toggle nav" aria aria-expanded="false" aria aria-controls="nav-menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
+
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#">Favorite</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
     </nav>
     `;
     const navbarHamburger = this.shadowDOM.querySelector(".navbar-hamburger");
